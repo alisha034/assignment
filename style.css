@@ -1,0 +1,76 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color:black;
+	text-emphasis-color: red;
+	color:red;
+	font-size:30px;
+}
+nav {
+background-color:beige;
+	color:black;
+	padding: 10px;
+	font-size: 40px;
+	word-spacing: 15px;
+	text-align: center;
+}
+nav ul li a{
+	text-decoration: none;
+	text-align: center;
+}
+nav ul li a:hover{
+	background-color:#fff;
+}
+h1{
+	margin: 5px;
+	padding: 10px;
+	color:  pink;
+}
+p{
+	font-size: 25px;
+	margin: 5px;
+	padding: 10px
+}
+.form{
+	width: 10px;
+    height: 30px;
+	text-align: center;
+}
+	
+.grid{
+	display: grid;
+	grid-template-columns:auto auto auto;  
+	grid: column gap 50px;;
+	background: color black;
+	padding:10px;
+	height:40px;
+	margin: 10px; 
+
+  }
+  .grid-item{
+    grid-auto-columns: max-content;
+    background-color:black;
+    border: 30px;
+    padding: 20px;
+	margin: 10px; 
+    font-size:30px ;
+	height: 50px;
+    text-align: center;
+  }
+  .item1{
+	  color: aquamarine;
+  }
+  .item2{
+	  color: pink;
+  }
+  .item3{
+	  color:orange;
+	  }
+  .image2{
+	  height:140px;
+	  margin:50px;
+      padding:10px;
+  }
+
+  
+  
