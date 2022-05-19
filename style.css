@@ -47,7 +47,7 @@ p{
 	margin: 10px; 
 
   }
-  .grid-item{
+.grid-item{
     grid-auto-columns: max-content;
     background-color:black;
     border: 30px;
@@ -56,8 +56,8 @@ p{
     font-size:30px ;
 	height: 50px;
     text-align: center;
-  }
-  .item1{
+}
+.item1{
 	  color: aquamarine;
   }
   .item2{
