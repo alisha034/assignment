@@ -1,76 +1,185 @@
-body{
-	margin: 0;
-	padding: 0;
-	background-color:black;
-	text-emphasis-color: red;
-	color:red;
-	font-size:30px;
-}
-nav {
-background-color:beige;
-	color:black;
-	padding: 10px;
-	font-size: 40px;
-	word-spacing: 15px;
-	text-align: center;
-}
-nav ul li a{
+* {
+	box-sizing: border-box;
 	text-decoration: none;
+	list-style: none;
+}
+
+body {
+	padding: 10px;
+	background-color: powderblue;
+	font-size: 18px;
+	text-align-last: center;
+}
+
+nav {
+	background-color: black;
+	text-align: center;
+	justify-content: space-between;
+
+
+}
+
+nav ul {
+	margin: 5px;
+	overflow: auto;
+}
+
+nav li {
+	display: inline-flex;
+
+}
+
+nav li a {
+	display: block;
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	justify-items: center;
+
+
+}
+
+nav li a:hover {
+	background-color: pink;
+}
+
+.checkbtn {
+	font-size: 30px;
+	color: white;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+#check {
+	display: none;
+}
+
+nav ul li a {
+	font-size: 25px;
 	text-align: center;
 }
-nav ul li a:hover{
-	background-color:#fff;
+
+@media(max-width: 700px) {
+	.checkbtn {
+		display: block;
+		float: left;
+
+	}
+
+	nav {
+		background-color: black;
+	}
+
+	nav ul {
+		position: relative;
+		width: 30%;
+		height: auto;
+		top: 5px;
+		text-align: center;
+	}
+
+	nav ul li {
+		display: block;
+
+	}
+
+	nav ul li a {
+		font-size: 15px;
+		float: none;
+	}
+
+	a:hover,
+	a.active {
+		background: none;
+		color: aquamarine;
+	}
+
+	#check:checked~ul {
+		left: 0;
+	}
 }
-h1{
+
+.blog {
+	top: 10px;
+	margin: 5px;
+}
+
+.portfolio {
+	margin-top: 20px;
+}
+
+h1 {
 	margin: 5px;
 	padding: 10px;
-	color:  pink;
+	color: pink;
 }
-p{
-	font-size: 25px;
-	margin: 5px;
+
+p {
+	color: purple;
+	font-size: 20px;
+	margin: 15px;
 	padding: 10px
 }
-.form{
+
+h2 {
+	color: red;
+	font-size: 25px;
+	margin: auto;
+	padding: 10px;
+}
+
+.form {
 	width: 10px;
-    height: 30px;
+	height: 30px;
 	text-align: center;
 }
-	
-.grid{
+
+.grid {
 	display: grid;
-	grid-template-columns:auto auto auto;  
-	grid: column gap 50px;;
-	background-color: black;
-	padding:10px;
-	height:40px;
-	margin: 10px; 
+	grid-template-columns: auto auto auto;
+	grid-column-gap: 50px;
+	background-color: powderblue;
+	padding: 10px;
+	height: 40px;
+	margin: 10px;
 
-  }
-.grid-item{
-    grid-auto-columns: max-content;
-    background-color:black;
-    border: 30px;
-    padding: 20px;
-	margin: 10px; 
-    font-size:30px ;
-	height: 50px;
-    text-align: center;
 }
-.item1{
-	  color: aquamarine;
-  }
-  .item2{
-	  color: pink;
-  }
-  .item3{
-	  color:orange;
-	  }
-  .image2{
-	  height:140px;
-	  margin:50px;
-      padding:10px;
-  }
 
-  
-  
+.grid-item {
+	grid-auto-columns: max-content;
+	background-color: black;
+	border: 30px;
+	padding: 20px;
+	margin: 10px;
+	font-size: 30px;
+	height: 50px;
+	text-align: center;
+}
+
+.item1 {
+	color: royalblue;
+	font-size: 30px;
+}
+
+.item2 {
+	color: red;
+	font-size: 30px;
+}
+
+.item3 {
+	color: #ffa500;
+	font-size: 30px;
+}
+
+.image2 {
+	height: 140px;
+	margin: 50px;
+	padding: 10px;
+}
+
+.validate {
+	width: 70%;
+	height: 70%;
+}
